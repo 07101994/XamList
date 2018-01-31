@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace XamList.UnitTests
+namespace XamList.UnitTests.iOS
 {
     public class DependencyServiceStub : IDependencyService
     {

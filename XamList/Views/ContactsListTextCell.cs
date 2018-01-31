@@ -72,7 +72,7 @@ namespace XamList
         {
             var contactSelected = BindingContext as ContactModel;
 
-            await Task.WhenAll(APIService.DeleteContactModel(contactSelected), 
+            await Task.WhenAll(APIService.DeleteContactModel(contactSelected.Id), 
                                ContactDatabase.DeleteContact(contactSelected));
 
             ContactsListViewModel.RefreshCommand?.Execute(null);

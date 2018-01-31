@@ -12,7 +12,7 @@ using Xamarin.Forms;
 
 namespace XamList
 {
-    abstract class BaseHttpClientService
+    public abstract class BaseHttpClientService
     {
         #region Constant Fields
         static readonly Lazy<JsonSerializer> _serializerHolder = new Lazy<JsonSerializer>();

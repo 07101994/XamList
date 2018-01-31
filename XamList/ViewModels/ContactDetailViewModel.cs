@@ -21,7 +21,7 @@ namespace XamList
 
         #region Properties
         public Command<bool> SaveButtonTappedCommand => _saveButtonTappedCommand ??
-            (_saveButtonTappedCommand = new Command<bool>(async (isNewContact) => await ExecuteSaveButtonTappedCommand(isNewContact)));
+            (_saveButtonTappedCommand = new Command<bool>(async isNewContact => await ExecuteSaveButtonTappedCommand(isNewContact)));
 
         public string FirstNameText
         {
